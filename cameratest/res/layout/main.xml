@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <SurfaceView
+        android:id="@+id/sfvCamera"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </SurfaceView>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="160dip"
+            android:layout_height="100dip" >
+        </ImageView>
+
+        <View
+            android:id="@+id/centerView"
+            android:layout_width="300dip"
+            android:layout_height="180dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#55FF6666" >
+        </View>
+
+        <TextView
+            android:id="@+id/txtScanResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/centerView"
+            android:layout_centerHorizontal="true"
+            android:text="Scanning..."
+            android:textColor="#FF000000" >
+        </TextView>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Take Again" >
+        </Button>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="Exit" >
+        </Button>
+    </RelativeLayout>
+
+</FrameLayout>
